@@ -1,0 +1,35 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            function suma(a,b){
+                let oa = a*1
+                let ob = b*1
+                //console.log(typeof oa)
+                if(
+                    typeof a === "number"
+                    &&
+                    typeof b === "number"
+                ){}else{
+                    return false;
+                   
+                }
+                let suma = oa+ob;
+                return suma;
+            }
+            function pruebaUnitaria(prueba,resultado){
+                if(prueba == resultado){
+                    return true
+                }else{
+                    return false;
+                }
+            }
+            console.log(pruebaUnitaria(suma(3,2),5))
+            console.log(pruebaUnitaria(suma("3",2),5))
+            console.log(suma("a",2))
+            console.log(pruebaUnitaria(suma("a",2),false))
+            
+        </script>
+    </body>
+</html>
